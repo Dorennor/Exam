@@ -1,0 +1,23 @@
+﻿@model User;
+
+<div>
+    <div class="align-middle"><label>Are you sure?</label></div>
+    <table>
+        <tr>
+            <td>
+                <div class="btn, border-dark">
+                    <form class="nav-link" method="post" asp-area="" asp-controller="Home" asp-action="DeleteUser" asp-route-id=@Model.Id>
+                        <button>Yes</button>
+                    </form>
+                </div>
+            </td>
+            <td>
+                <div class="btn, border-dark">
+                    <form class="nav-link" method="get" asp-area="" asp-controller="Home" asp-action="Index">
+                        <button>No</button>
+                    </form>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
